@@ -1,0 +1,431 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: "Heebo", sans-serif;
+}
+body{
+    max-width: 1152px;
+    min-height: 100vh;
+    margin: auto;
+}
+nav{
+    width: 100%;
+    height: 10%;
+    background-color: #FFFFFF;
+}
+nav > *{
+    color: #000000;
+    font-size: 20px;
+    font-weight: 500;
+}
+nav{
+    padding: 0px 28px;
+}
+nav ul{
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    list-style: none;
+    padding: 24px;
+    gap: 28px;
+}
+nav ul img{
+    display: none;
+}
+li a{
+    text-decoration: none;
+}
+li a:visited:not(.current){
+    color: #000000;
+}
+li a:hover:not(.current){
+    text-decoration: underline;
+}
+nav ul .current {
+    color: #FF6464;
+}
+.intro{
+    display: flex;
+    flex-direction: row;
+}
+.post{
+    width: 100%;
+    height: auto;
+    background-color: #EDF7FA;
+}
+.work{
+    background-color: #FFFFFF;
+}
+footer{
+    display: flex;   
+    flex-direction: column;
+    gap: 28px;
+    text-align: center;
+    padding: 40px 80px 40px 80px;
+}
+footer .icon{
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+}
+footer p{
+    font-size: 14px;
+    color: #21243D;
+}
+.intro{
+    padding:  40px 80px ;
+}
+.intro .name{
+    flex-basis: 60%;
+}
+.name .detail{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.detail h1{
+    width: 90%;
+    color: #21243D;
+    font-size: 44px;
+}
+.detail p{
+    width: 90%;
+    color: #21243D;
+    font-size: 16px;
+}
+.detail button{
+    padding: 8px 16px;
+    background-color: #FF6464;
+    color: white;
+    border: none;
+    width: 208px;
+    font-size: 20px;
+}
+.intro .photo{
+    flex-basis: 40%;
+    text-align: center;
+    align-content: center;
+}
+.post{
+    padding:  40px 80px ;
+}
+.post .container .box{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    background-color: #FFFFFF;
+    border-radius: 4px;
+    padding: 24px;
+    min-height: 295px;
+    margin: 20px 0px;
+    position: relative;
+}
+.post .container .box > span{
+    position: absolute;
+    font-size: 22px;
+    color: #21243D;
+    bottom: 300px;
+    left: 0px;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    justify-content: space-between;
+}
+.container .box .date{
+    display: flex;
+    justify-content: flex-start;
+    gap: 12px;
+}
+.work{
+    display: flex;
+    flex-direction: column;
+    padding:  40px 80px ;
+    color: #21243D;
+}
+.work > h3{
+    font-size: 22px;
+    font-weight: 400;
+    padding: 24px 0px;
+}
+.work .topic{
+    display: flex;
+    gap: 18px;
+    margin-bottom: 28px;
+    border-bottom: 1px solid #E0E0E0;
+}
+.work .topic .photo{
+    width: 246px;
+}
+.work .topic .subject{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-bottom: 20px;
+}
+.work .topic .subject h2{
+    font-size: 30px;
+    color: #21243D;
+}
+.work .topic .subject span{
+    display: flex;
+    gap: 20px;
+    font-size: 20px;
+    color: #8695A4;
+}
+.work .topic .subject span h4{
+    font-size: 18px;
+    color: white;
+    padding: 2px 8px;
+    border-radius: 64px ;
+    background-color: black;
+    width: min-content;
+}
+.work .topic .subject p{
+    font-size: 16px;
+    color: #21243D;
+    width: 80%;
+}
+
+/* Blog */
+.blog{
+    padding: 40px 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+}
+.blog h2{
+    font-size: 44px;
+    color: #21243D;
+}
+.blog .story{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.blog .story h3{
+    font-size: 30px;
+    color: #21243D;
+}
+.blog .story hr{
+    border-color: rgba(224, 224, 224, 0.273);
+}
+.blog .story .day h4{
+    color: #21243D;
+    font-size: 20px;
+    font-weight: 400;
+}
+.blog .story .day span{
+    display: flex;
+    gap: 16px;
+    color: #8695A4;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+/* Workpage */
+.workpage{
+    display: flex;
+    flex-direction: column;
+    padding:  40px 80px ;
+    color: #21243D;
+    gap: 55px;
+}
+.workpage > h2{
+    font-size: 44px;
+    color: #21243D;
+}
+.workpage .topic{
+    display: flex;
+    gap: 18px;
+    margin-bottom: 28px;
+    border-bottom: 1px solid #E0E0E0;
+}
+.workpage .topic .photo{
+    width: 246px;
+}
+.workpage .topic .subject{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-bottom: 20px;
+}
+.workpage .topic .subject h2{
+    font-size: 30px;
+    color: #21243D;
+}
+.workpage .topic .subject h2 a{
+    text-decoration: none;
+    color: #21243D;
+}
+.workpage .topic .subject h2 a:hover{
+    text-decoration: underline;
+    color: #21243D;
+}
+.workpage .topic .subject span{
+    display: flex;
+    gap: 20px;
+    font-size: 20px;
+    color: #8695A4;
+}
+.workpage .topic .subject span h4{
+    font-size: 18px;
+    color: white;
+    padding: 2px 8px;
+    border-radius: 64px ;
+    background-color: #142850;
+    width: min-content;
+}
+.workpage .topic .subject p{
+    font-size: 16px;
+    color: #21243D;
+    width: 80%;
+}
+
+/* Work Detail */
+.workdetail{
+    display: flex;
+    flex-direction: column;
+    padding:  40px 80px ;
+    color: #21243D;
+    gap: 32px;
+}
+.workdetail h2{
+    font-size: 44px;
+}
+.workdetail span h4{
+    font-size: 18px ;
+    color: white;
+    width: fit-content;
+    padding: 2px 8px;
+    background-color: #FF6464;
+    border-radius: 64px;
+}
+.workdetail span{
+    font-size: 20px;
+    color: #21243D ;
+    font-weight: 300;
+    display: flex;
+    gap: 16px;
+}
+.workdetail p{
+    font-size: 16px;
+    color: #21243D;
+}
+.heading01{
+    display: flex;
+    flex-direction: column;
+    padding:  40px 80px ;
+    color: #21243D;
+    gap: 10px;
+}
+.heading01 h5{
+    font-size: 30px;
+    color: #21243D;
+}
+.heading01 h6{
+    font-size: 24px;
+    color: #21243D;
+}
+.heading01 p{
+    font-size: 16px;
+    color: #21243D;
+}
+
+/* Responsive */
+@media (max-width:800px){
+    nav ul li{
+        display: none;
+    }
+    nav ul img{
+        display: block;
+    }
+    .intro{
+        flex-direction: column-reverse;
+    }
+    .intro .name .detail >*{
+        flex-basis: 100%;
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+    .intro .name .detail > h1{
+        font-size: 6vw;
+    }
+    .intro, .post, footer{
+        padding: 40px 40px ;
+    }
+    .container{
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 0px;
+    }
+    .post .container .box{
+        flex-basis: 100%;
+        justify-content: flex-start;
+        gap: 24px;
+        min-height: fit-content;
+    }
+    .post .container .box > span{
+        position: absolute;
+        top: -40px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .post .container .box:nth-child(2) > span{
+        display: none;
+    }
+    .work{
+        padding: 20px 40px;
+    }
+}
+
+    @media(max-width:700px){
+        .work{
+            text-align: center;
+        }
+        .work .topic{
+            text-align: center;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .work .topic .photo{
+            width: 100%;
+        }
+        .work .topic .subject span{
+            justify-content: center;
+        }
+        .work .topic .subject p{
+            width: 100%;
+        }
+    }
+    @media(max-width:410px){
+        .intro, .work, .post, footer{
+            padding: 20px 20px ;
+        }
+        .post .container .box > span{
+            font-size: 5vw;
+            position: absolute;
+            top: -24px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .work .topic .subject h2{
+            text-align: left;
+            font-size: 6vw;
+            color: #21243D;
+        }
+        .work .topic .subject p {
+            text-align: left;
+        }
+        .work .topic .subject span{
+            justify-content: flex-start;
+        }
+    }
